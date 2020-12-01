@@ -1,0 +1,39 @@
+{
+    "name": "undjike/billing-system",
+    "description": "Postpaid billing system",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ulrich Pascal Ndjike Zoa",
+            "email": "ndjikezoaulrich@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "ext-pdo": "*",
+        "spatie/laravel-model-status": "^1.10",
+        "spatie/enum": "^3.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Undjike\\BillingSystem\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Undjike\\BillingSystem\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Undjike\\BillingSystem\\BillingServiceProvider"
+            ]
+        }
+    }
+}
